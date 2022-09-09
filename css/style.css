@@ -444,7 +444,7 @@ h3.assalamualaikum span{
 }
 .about .about-content .timeline .timeline-text{
     line-height: 25px;
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
     color: var(--text-black-700);
 }
@@ -603,7 +603,7 @@ html,body{
     display: inline-flex;
 }
 .icons a{
-    margin: 0 80px;
+    margin: 0 85px;
     text-decoration: none;
     color: #ffffff;
     display: block;
@@ -640,12 +640,12 @@ html,body{
     opacity: 0.4;
     transform: translate(5px, -5px);
 }
-/* .icons a:hover .layer span:nth-child(3){
-    opacity: 0.6;
-    transform: translate(10px, -10px);
-} */
 .icons a:hover .layer span:nth-child(3){
     opacity: 0.8;
+    transform: translate(10px, -10px);
+}
+.icons a:hover .layer span:nth-child(4){
+    opacity: 10.0;
     transform: translate(15px, -15px);
 }
 .icons a:nth-child(1) .layer span,
@@ -674,9 +674,6 @@ html,body{
 .icons a:nth-child(2) .layer span{
     box-shadow: -1px 1px 3px #e1306c;
 }
-/* .icons a:nth-child(3) .layer span{
-    box-shadow: -1px 1px 3px #FFFF00;
-} */
 .icons a:nth-child(3) .layer span{
     box-shadow: -1px 1px 3px #ff0000;
 }
@@ -694,5 +691,4 @@ html,body{
 .icons a:hover .text{
     bottom: -35px;
     opacity: 1;
-
 }
