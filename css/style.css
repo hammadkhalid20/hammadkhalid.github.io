@@ -2,14 +2,14 @@
 :root{
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
+    --bg-black-50:#999999;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
 body.dark{
     --bg-black-900:#151515;
     --bg-black-100:#222222;
-    --bg-black-50:#393939;
+    --bg-black-50:#ffffff;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
 }
@@ -275,7 +275,6 @@ h3.assalamualaikum span{
     border-left: 10px solid var(--skin-color);
     left: -20px;
     top: -40px;
-
 }
 .home .home-image img{
     margin: auto;
@@ -529,4 +528,9 @@ form .btn2{
 }
 .copyright i{
     color: #ff004f;
+}
+#msg{
+    color: #61b752;
+    margin-top: -90px;
+    display: block;
 }
