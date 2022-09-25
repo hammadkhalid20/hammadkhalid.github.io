@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root{
-    --bg-black-900:#f2f2fc;
+    /* --bg-black-900:#f2f2fc; */
+    --bg-black-900:#fdf9ff;
     --bg-black-100:#fdf9ff;
+    /* --bg-black-100:#f2f2fc; */
     --bg-black-50:#999999;
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
@@ -33,7 +35,7 @@ ul{
 }
 .section{
     background: var(--bg-black-900);
-    min-height: 100vh;
+    min-height: 90vh;
     display: block;
     padding: 0 30px;
     opacity: 1;
@@ -42,7 +44,7 @@ ul{
     display: none !important;
 }
 .main-content{
-    padding-left: 270px;
+    padding-left: 210px;
 }
 .padd-15{
     padding-left: 15px;
@@ -54,13 +56,13 @@ ul{
     margin: auto;
 }
 .section .container{
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .section-title h2{
     font-size: 40px;
@@ -113,7 +115,7 @@ ul{
     box-shadow: 0 0 20px rgba(48, green46, blue77, alpha0.15);
 }
 .hammad{
-    width: 270px;
+    width: 220px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
