@@ -5,23 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Hammad Khalid</title>
+    <link rel="icon" href="images/Icon.png">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
-
-    <link rel="stylesheet" class="alternate-style" title="red" href="css/skins/red.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css"disabled>
-    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/skins/blue.css" class="alternate-style" title="blue" disabled>
+    <link rel="stylesheet" href="css/skins/pink.css" class="alternate-style" title="pink" disabled>
+    <link rel="stylesheet" href="css/skins/yellow.css" class="alternate-style" title="yellow" disabled>
+    <link rel="stylesheet" href="css/skins/green.css" class="alternate-style" title="green" disabled>
+    <link rel="stylesheet" href="css/skins/orange.css" class="alternate-style" title="orange" disabled>
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <script src="https://kit.fontawesome.com/1439748432.js"></script>
 </head>
 <body>
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
     <div class="main-container">
         <div class="madi">
-            <div class="logo">
-                <a href="#">Madi</a>
-            </div>
             <div class="nav-toggler">
                 <span></span>
+            </div>
+            <div class="madi-inner">
+            <div class="logo">
+                <a href="#">Madi</a>
             </div>
             <ul class="nav">
                 <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
@@ -33,13 +42,14 @@
                 &copy; 2022 The Madi Template
             </div>
         </div>
+        </div>
         <div class="main-content">
-            <section class="home section">
+            <section class="home section active" id="home">
                 <div class="container">
                     <div class="intro">
                         <img src="images/hero.jpg" alt="profile" class="shadow-dark">
                         <h1>Hammad Khalid</h1>
-                        <p>I'm A Frontend Web Developer</p>
+                        <p>I'm a Junior Web Developer</p>
                         <div class="social-links">
                             <a href="https://www.facebook.com/profile.php?id=100070897916920" target="_blank"><i class="fa fa-facebook"></i></a>
                             <a href="https://www.instagram.com/hammad._.khalid" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -50,7 +60,7 @@
                 </div>
             </section>
             <section>
-                <div class="about section">
+                <div class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -96,7 +106,7 @@
                                         <div class="row">
                                             <div class="buttons padd-15">
                                                 <a href="images/Hammad.CV.pdf" class="btn" target="_blank">Download CV</a>
-                                                <a href="#" class="btn">Hire Me</a>
+                                                <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
                                             </div>
                                         </div>
                                     </div>
@@ -259,7 +269,7 @@
                     </div>
                 </div>
                </section>
-               <section class="contact section">
+               <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -288,26 +298,26 @@
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name*">
+                                    <input type="text" name="Name" class="form-control" placeholder="Name*">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email*">
+                                    <input type="text" name="Email" class="form-control" placeholder="Email*">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject*">
+                                    <input type="text" name="Subject" class="form-control" placeholder="Subject*">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message..."></textarea>
+                                    <textarea class="form-control" name="Message" placeholder="Your Message..."></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -323,22 +333,41 @@
                </section>
         </div>
     </div>
-    <!-- <div class="style-switcher">
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
         <h5>Style Switcher</h5>
-        <ul>
-
-        </ul>
-    </div> -->
+        <div class="colors">
+            <span class="pink" onclick="setActiveStyle('pink')"></span>
+            <span class="blue" onclick="setActiveStyle('blue')"></span>
+            <span class="orange" onclick="setActiveStyle('orange')"></span>
+            <span class="yellow" onclick="setActiveStyle('yellow')"></span>
+            <span class="green" onclick="setActiveStyle('green')"></span>
+        </div>
+        <h5>Body Skin</Body></h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+            Light
+        </label>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark">
+            Dark
+        </label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwgZjf1wy36b7WOlX6RHFSTTobg1nSnvHGpbo0iYfptv03y_BWVpibzazfRCBqKpgvm/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLncq6dWvsBvjjn-ZMv9fyDMZS8KeUl8m7vzPlslY9Q69Hopc7d7aO1cJ3bfZCmTPlDg/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
+      
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message Sent Successfully"
+                msg.innerHTML = "Message Sent SuccessFully!"
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)

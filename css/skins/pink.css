@@ -8,6 +8,8 @@
 }
 .contact .contact-info-item .icon .fa,
 .about .about-content .about-text h3 span,
+body.dark .madi .nav li a:hover,
+body.dark .madi .nav li a.active,
 .madi .nav li a:hover,
 .madi .nav li a.active {
     color: #ec1839;

@@ -3,11 +3,13 @@
     border-left: 4px solid #2196f3;
 }
 .madi .logo a::after{
-    border-right: 4px solid #ec1839;
-    border-bottom: 4px solid #ec1839;
+    border-right: 4px solid #2196f3;
+    border-bottom: 4px solid #2196f3;
 }
 .contact .contact-info-item .icon .fa,
 .about .about-content .about-text h3 span,
+body.dark .madi .nav li a:hover,
+body.dark .madi .nav li a.active,
 .madi .nav li a:hover,
 .madi .nav li a.active {
     color: #2196f3;
