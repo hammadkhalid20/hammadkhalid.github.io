@@ -1,30 +1,4 @@
 
-// // const links=document.querySelectorAll(".alternate-style"),
-// const alternateStyles = document.querySelectorAll(".alternate-style");
-//         //   totalLinks=links.length;
-//         / function setActiveStyle(color){
-//                 alternateStyles.forEach((style) => {
-//                     if(color === style.getAttribute("title"))
-//                     {
-//                         style.removeAttribute("disabled");
-//                     }
-//                     else
-//                     {
-//                         style.setAttribute("disabled", "true");
-//                     }
-//                 })
-//             }
-
-// function setActiveStyle(color) {
-//     for(let i=0; i<totalLinks; i++){
-//         if(color == links[i].getAttribute("class")){
-//             links[i].removeAttribute("disabled");
-//         }
-//         else{
-//             links[i].setAttribute("disabled","true");
-//         }
-//     }
-// }
 
 const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 styleSwitcherToggle.addEventListener("click", () => {
@@ -61,17 +35,3 @@ function setActiveStyle(color){
         }
     })
 }
-// const dayNight = document.querySelector(".day-night");
-// dayNight.addEventListener("click", () => {
-//     dayNight.querySelector("i").classList.toggle("fa-sun");
-//     dayNight.querySelector("i").classList.toggle("fa-moon");
-//     document.body.classList.toggle("dark");
-// })
-// window.addEventListener("load", () => {
-//     if(document.body.classList.contains("dark")){
-//         dayNight.querySelector("i").classList.add("fa-sun");
-//     }
-//     else{
-//         dayNight.querySelector("i").classList.add("fa-moon");
-//     }
-// })
