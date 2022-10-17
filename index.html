@@ -359,7 +359,7 @@
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLncq6dWvsBvjjn-ZMv9fyDMZS8KeUl8m7vzPlslY9Q69Hopc7d7aO1cJ3bfZCmTPlDg/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDhS4dw0H0JzYBxvHrTo0DExiGdY1rLnku1L3VsUflx6gypqXzL9SMej72kicr1M_UZw/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
       
@@ -367,7 +367,7 @@
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                msg.innerHTML = "Message Sent SuccessFully!"
+                msg.innerHTML = "Message Sent Successfully"
                 setTimeout(function(){
                     msg.innerHTML = ""
                 },5000)
